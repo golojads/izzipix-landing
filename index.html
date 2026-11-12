@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IzziPix - платформа для школьной и детсадовской фотографии</title>
+<meta name="description" content="Вы снимаете - всё остальное делает IzziPix: онлайн-галерея для каждого ребёнка, оплата на ваш счёт, печать и доставка в школу. Первая фотосессия без комиссии.">
+<meta property="og:title" content="IzziPix - вы снимаете, всё остальное делает платформа">
+<meta property="og:description" content="Онлайн-галерея для каждого ребёнка, оплата на ваш счёт, печать и доставка в школу. Первая фотосессия без комиссии.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(247,248,251,0.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid #E3E5EF">
+<div class="hin" style="max-width: 1200px; margin: 0 auto; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="#top" style="text-decoration: none; display: flex; align-items: center; gap: 10px">
+<img src="assets/logo.svg" alt="IzziPix" style="height: 52px; width: auto; display: block">
+</a>
+<nav class="nav" style="display: flex; gap: 28px; flex-wrap: wrap; align-items: center">
+<a href="#pain">Проблема</a>
+<a href="#how">Как это работает</a>
+<a href="#sales">Продажи</a>
+<a href="#start">Цены</a>
+<a href="#results">Цифры</a>
+</nav>
+<div style="display: flex; gap: 12px; align-items: center">
+<a class="login" href="#" style="font-weight: 600; font-size: 15px; text-decoration: none; color: #111843">Войти</a>
+<a class="btn btn-p hcta" href="#start" style="min-height: 44px; font-size: 15px"><span class="lg">Первая съёмка без комиссии</span><span class="sm">Попробовать</span></a>
+<button type="button" class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="mmenu">
+<svg class="ico-open" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111843" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+<svg class="ico-close" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111843" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
+</div>
+</div>
+<nav class="mmenu" id="mmenu" aria-label="Меню" hidden style="flex-direction: column; padding: 4px 20px 20px; background: #F7F8FB; border-top: 1px solid #E3E5EF; box-shadow: 0 16px 32px rgba(17,24,67,0.10)">
+<a class="mi" href="#pain">Проблема</a>
+<a class="mi" href="#how">Как это работает</a>
+<a class="mi" href="#sales">Продажи</a>
+<a class="mi" href="#start">Цены</a>
+<a class="mi" href="#results">Цифры</a>
+<a class="mi" href="#">Войти</a>
+<a class="btn btn-p" href="#start" style="margin-top: 18px">Первая съёмка без комиссии</a>
+</nav>
+</header>
+
+<main>
+
+<!-- 1. HERO -->
+<section id="top" class="sec hero" style="max-width: 1200px; margin: 0 auto; padding: 88px 32px 96px; display: flex; flex-wrap: nowrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5B3FD0">Для школьной и детсадовской фотографии</div>
+<h1 style="margin: 0; font-size: clamp(40px, 5.4vw, 72px); line-height: 1.02; font-weight: 800; letter-spacing: -0.03em">Вы снимаете.<br><span class="acc">Всё остальное</span> делает IzziPix.</h1>
+<p class="lead" style="margin: 0; font-size: 20px; line-height: 1.55; color: #3A4066; max-width: 600px">Без бланков, наличных через учителей и путаницы с заказами. Родители получают онлайн-фотогалерею своего ребёнка в день съёмки, деньги приходят на ваш счёт, лаборатория везёт заказы в школу.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<a class="btn btn-p" href="#start">Провести первую съёмку без комиссии</a>
+<a class="btn btn-s" href="#how">Как это работает</a>
+</div>
+<div class="facts" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px">
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 14px; padding: 18px 16px 8px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-weight: 800; font-size: 19px; line-height: 1.25">0 € инвестиций с вашей стороны на старте</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4A5072; margin-top: 6px">Камера и умение снимать у вас уже есть. Ни подписки, ни платы за подключение. Первая съёмка - без комиссии.</div>
+<div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-bottom: 8px">
+<button type="button" class="more" style="color: #5B3FD0" data-modal="money_zero">Подробнее →</button>
+<span aria-hidden="true" style="display: flex; flex: none; width: 44px; height: 44px; border-radius: 12px; background: #ECE8FF; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg></span>
+</div>
+</div>
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 14px; padding: 18px 16px 8px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-weight: 800; font-size: 19px; line-height: 1.25">Первые деньги - через минуты после загрузки фото</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4A5072; margin-top: 6px">Вечером после загрузки родители получают SMS со ссылкой на галерею ребёнка и заказывают с телефона.</div>
+<div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-bottom: 8px">
+<button type="button" class="more" style="color: #5B3FD0" data-modal="sales_justina">Подробнее →</button>
+<span aria-hidden="true" style="display: flex; flex: none; width: 44px; height: 44px; border-radius: 12px; background: #ECE8FF; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></span>
+</div>
+</div>
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 14px; padding: 18px 16px 8px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-weight: 800; font-size: 19px; line-height: 1.25">Деньги сразу на вашем счету без задержек</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4A5072; margin-top: 6px">Родители платят картой, и деньги сразу идут на ваш <button type="button" class="inl" data-modal="stripe">Stripe</button>. Никто не собирает наличные и не держит их до конца сезона.</div>
+<div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-bottom: 8px">
+<button type="button" class="more" style="color: #5B3FD0" data-modal="money_seller">Подробнее →</button>
+<span aria-hidden="true" style="display: flex; flex: none; width: 44px; height: 44px; border-radius: 12px; background: #ECE8FF; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg></span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Parent phone mock -->
+<div class="phonewrap" style="flex: 0 0 auto; display: flex; justify-content: center; align-items: center; gap: 8px; padding: 24px 0">
+<div role="img" aria-label="Экран телефона: SMS от фотографа со ссылкой на галерею" style="width: 200px; flex: none; border: 9px solid #111843; border-radius: 34px; background: #F4F5F9; overflow: hidden; box-shadow: 0 24px 60px rgba(17,24,67,0.18); display: flex; flex-direction: column; min-height: 460px">
+<div style="padding: 16px 14px 12px; background: #fff; border-bottom: 1px solid #EEF0F6; display: flex; align-items: center; gap: 10px">
+<div style="width: 34px; height: 34px; border-radius: 50%; background: #5B3FD0; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex: none">А</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-size: 14px; font-weight: 800; line-height: 1.2">Фотостудия «Анна»</div>
+<div style="font-size: 11px; color: #6B7194; font-weight: 600">SMS</div>
+</div>
+</div>
+<div style="flex: 1; padding: 14px 12px; display: flex; flex-direction: column; gap: 8px">
+<div style="align-self: center; font-size: 11px; color: #6B7194; font-weight: 600; margin-bottom: 4px">Сегодня, 17:45</div>
+<div style="align-self: flex-start; max-width: 88%; background: #fff; border: 1px solid #E3E5EF; border-radius: 16px 16px 16px 4px; padding: 10px 12px; font-size: 13px; line-height: 1.45; color: #111843">Здравствуйте! Фото Маши со школьной фотосессии уже готовы. Смотрите и заказывайте здесь:<br><span style="color: #5B3FD0; font-weight: 700; text-decoration: underline; text-underline-offset: 2px">ваш-домен.lv/2b/masha</span></div>
+<div style="align-self: flex-start; max-width: 88%; background: #fff; border: 1px solid #E3E5EF; border-radius: 16px 16px 16px 4px; padding: 10px 12px; font-size: 13px; line-height: 1.45; color: #111843">Заказы с бесплатной доставкой в школу - до 28 ноября.</div>
+</div>
+<div style="padding: 10px 12px 14px; background: #fff; border-top: 1px solid #EEF0F6">
+<div style="border: 1px solid #E3E5EF; border-radius: 18px; padding: 8px 12px; font-size: 12px; color: #6B7194">Сообщение</div>
+</div>
+</div>
+<div class="arrw" aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; gap: 6px; width: 48px">
+<svg class="arr" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"></path><path d="M13 6l6 6-6 6"></path></svg>
+<div style="font-size: 12px; font-weight: 700; color: #5B3FD0; text-align: center; line-height: 1.3">клик по ссылке</div>
+</div>
+<div role="img" aria-label="Экран телефона: онлайн-фотогалерея ребёнка" style="width: 200px; flex: none; border: 9px solid #111843; border-radius: 34px; background: #fff; overflow: hidden; box-shadow: 0 24px 60px rgba(17,24,67,0.18); min-height: 460px">
+<div style="padding: 18px 18px 10px; border-bottom: 1px solid #EEF0F6">
+<div style="font-size: 12px; color: #6B7194; font-weight: 600">Онлайн-фотогалерея</div>
+<div style="font-size: 20px; font-weight: 800">Маша · 2Б</div>
+</div>
+<div style="padding: 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<div style="height: 82px; border-radius: 10px; background: #E7E1FF; display: flex; align-items: flex-end; padding: 8px; font-size: 12px; font-weight: 700; color: #3B2899">Портрет</div>
+<div style="height: 82px; border-radius: 10px; background: #FFE9D6; display: flex; align-items: flex-end; padding: 8px; font-size: 12px; font-weight: 700; color: #7A3E0C">На уроке</div>
+<div style="height: 82px; border-radius: 10px; background: #DDF1E4; display: flex; align-items: flex-end; padding: 8px; font-size: 12px; font-weight: 700; color: #1F5E36">Перемена</div>
+<div style="height: 82px; border-radius: 10px; background: #DCEBFB; display: flex; align-items: flex-end; padding: 8px; font-size: 12px; font-weight: 700; color: #1C4A7A">Весь класс</div>
+<div style="height: 82px; border-radius: 10px; background: #FBE3EC; display: flex; align-items: flex-end; padding: 8px; font-size: 12px; font-weight: 700; color: #7D2347">С друзьями</div>
+<div style="height: 82px; border-radius: 10px; background: #F3F0DA; display: flex; align-items: flex-end; padding: 8px; font-size: 12px; font-weight: 700; color: #5E5414">Столовая</div>
+</div>
+<div style="padding: 0 14px 18px">
+<div style="background: #5B3FD0; color: #fff; border-radius: 10px; text-align: center; padding: 12px; font-weight: 700; font-size: 15px">Заказать фото</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 2. PAIN -->
+<section id="pain" style="background: #111843; color: #fff">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px; max-width: 820px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C9BCFF">Знакомо?</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; font-weight: 800; letter-spacing: -0.02em">Вы фотограф - или <span class="acc-l">администратор с камерой?</span></h2>
+<p style="margin: 0; font-size: 21px; line-height: 1.6; color: #C3C7E0">Классическая школьная съёмка <span style="color: #FFFFFF; font-weight: 700">без автоматизации от IzziPix</span> - это сначала <span class="mark">скучный конвейер</span> у портретного фона, а потом <span class="mark">месяцы бумажной работы и стресса</span>.</p>
+</div>
+<div style="flex: 0 1 360px; min-width: 0; max-width: 360px; margin: 0 auto">
+<svg viewBox="0 0 360 280" role="img" aria-label="Весы: на одной чаше камера, на другой гора бланков, денег и звонков, и она перевешивает" style="display: block; width: 100%; height: auto">
+<path d="M140 262 L220 262 L210 245 L150 245 Z" fill="#2A3370" stroke="#C9BCFF" stroke-width="2" stroke-linejoin="round"></path>
+<rect x="176" y="70" width="8" height="176" rx="3" fill="#C9BCFF"></rect>
+<circle cx="180" cy="50" r="5" fill="#C9BCFF"></circle>
+<line x1="62.6" y1="45.1" x2="297.4" y2="94.9" stroke="#C9BCFF" stroke-width="5" stroke-linecap="round"></line>
+<circle cx="180" cy="70" r="9" fill="#111843" stroke="#C9BCFF" stroke-width="4"></circle>
+<line x1="62.6" y1="45.1" x2="32" y2="125" stroke="#C9BCFF" stroke-width="2"></line>
+<line x1="62.6" y1="45.1" x2="93" y2="125" stroke="#C9BCFF" stroke-width="2"></line>
+<rect x="44" y="98" width="37" height="26" rx="5" fill="#E8E4FF"></rect>
+<rect x="51" y="92" width="14" height="8" rx="2" fill="#E8E4FF"></rect>
+<circle cx="62.5" cy="111" r="8.5" fill="#111843"></circle>
+<circle cx="62.5" cy="111" r="4" fill="#C9BCFF"></circle>
+<path d="M28 125 L97 125 Q95 146 62.5 146 Q30 146 28 125 Z" fill="#2A3370" stroke="#C9BCFF" stroke-width="2" stroke-linejoin="round"></path>
+<text x="62.5" y="172" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#A9AED3">Съёмка</text>
+<line x1="297.4" y1="94.9" x2="267" y2="175" stroke="#C9BCFF" stroke-width="2"></line>
+<line x1="297.4" y1="94.9" x2="328" y2="175" stroke="#C9BCFF" stroke-width="2"></line>
+<g transform="rotate(-6 296 162)"><rect x="270" y="150" width="52" height="25" rx="2" fill="#F4F2FF" stroke="#B8B2DA" stroke-width="1"></rect><line x1="276" y1="158" x2="312" y2="158" stroke="#B8B2DA" stroke-width="2"></line><line x1="276" y1="165" x2="304" y2="165" stroke="#B8B2DA" stroke-width="2"></line></g>
+<g transform="rotate(6 295 141)"><rect x="268" y="129" width="54" height="25" rx="2" fill="#F4F2FF" stroke="#B8B2DA" stroke-width="1"></rect><line x1="274" y1="137" x2="312" y2="137" stroke="#B8B2DA" stroke-width="2"></line><line x1="274" y1="144" x2="300" y2="144" stroke="#B8B2DA" stroke-width="2"></line></g>
+<g transform="rotate(-9 296 121)"><rect x="272" y="110" width="48" height="23" rx="2" fill="#F4F2FF" stroke="#B8B2DA" stroke-width="1"></rect><line x1="278" y1="117" x2="310" y2="117" stroke="#B8B2DA" stroke-width="2"></line><line x1="278" y1="124" x2="300" y2="124" stroke="#B8B2DA" stroke-width="2"></line></g>
+<g transform="rotate(14 316 150)"><rect x="302" y="140" width="30" height="20" rx="2" fill="#E8E4FF" stroke="#B8B2DA" stroke-width="1"></rect><path d="M302 140 L317 152 L332 140" fill="none" stroke="#B8B2DA" stroke-width="1.5"></path></g>
+<ellipse cx="276" cy="172" rx="8" ry="3.5" fill="#E7B84A"></ellipse>
+<ellipse cx="279" cy="167" rx="8" ry="3.5" fill="#F2C760"></ellipse>
+<path d="M263 175 L332 175 Q330 196 297.5 196 Q265 196 263 175 Z" fill="#2A3370" stroke="#C9BCFF" stroke-width="2" stroke-linejoin="round"></path>
+<circle cx="326" cy="108" r="10" fill="#F06A6A"></circle>
+<text x="326" y="113" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">!</text>
+<text x="295" y="221" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#A9AED3">Бланки, деньги,</text>
+<text x="295" y="242" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#A9AED3">звонки</text>
+</svg>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="background: #1B2358; border: 1px solid #2A3370; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Бланки, которые теряются</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C3C7E0">Образцы или индекс-принт и бланки заказа через классных руководителей. Бланк идёт к ребёнку, к родителям, обратно к учителю, в администрацию - и где-то по дороге теряется.</p>
+<div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-bottom: 12px">
+<button type="button" class="more" style="color: #C9BCFF" data-modal="pain_forms">Подробнее →</button>
+<span aria-hidden="true" style="display: flex; flex: none; width: 44px; height: 44px; border-radius: 12px; background: rgba(201,188,255,0.14); align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9BCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path><path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></span>
+</div>
+</div>
+<div style="background: #1B2358; border: 1px solid #2A3370; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Наличные в конверте</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C3C7E0">Учитель собирает деньги и ищет сдачу. Часть денег до него не доходит, а родитель уверен, что заплатил.</p>
+<div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-bottom: 12px">
+<button type="button" class="more" style="color: #C9BCFF" data-modal="pain_cash">Подробнее →</button>
+<span aria-hidden="true" style="display: flex; flex: none; width: 44px; height: 44px; border-radius: 12px; background: rgba(201,188,255,0.14); align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9BCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2.5"></circle><path d="M6 12h.01"></path><path d="M18 12h.01"></path></svg></span>
+</div>
+</div>
+<div style="background: #1B2358; border: 1px solid #2A3370; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Однообразные фото каждый год</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C3C7E0">Портрет у фона и общее фото класса - и так из года в год. Родители не видят ничего нового, а такой портрет мама сегодня снимет и сама на телефон.</p>
+<div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-bottom: 12px">
+<button type="button" class="more" style="color: #C9BCFF" data-modal="pain_shots">Подробнее →</button>
+<span aria-hidden="true" style="display: flex; flex: none; width: 44px; height: 44px; border-radius: 12px; background: rgba(201,188,255,0.14); align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9BCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg></span>
+</div>
+</div>
+</div>
+<div class="big" style="background: #5B3FD0; border-radius: 20px; padding: 44px 44px 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #E4DCFF">Итог</div>
+<h3 style="margin: 0; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; max-width: 900px">Родители донимают директора жалобами. А в сентябре школа зовёт <span class="acc-w">другого фотографа.</span></h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #F0ECFF; max-width: 820px">Чужое фото в конверте, потерянный бланк, деньги не дошли, к Рождеству не успели. Администрация разрешила съёмку - а получила проблемы и разгневанных родителей. Вы теряете не одну съёмку, а школу на годы вперёд.</p>
+<button type="button" class="more" style="color: #fff" data-modal="pain_school">Подробнее →</button>
+</div>
+</div>
+</section>
+
+<!-- 3. HOW -->
+<section id="how" class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 820px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5B3FD0">Как это работает</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; font-weight: 800; letter-spacing: -0.02em">Сняли днём. <span class="acc">Продаёте вечером.</span></h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #3A4066">Одна ссылка до съёмки и четыре шага после. Ваши из них - съёмка, загрузка и одна волшебная <span style="white-space: nowrap">кнопка <svg class="wave" aria-hidden="true" width="24" height="24" style="display: inline-block; vertical-align: -5px" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"></path><path d="m14 7 3 3"></path><path d="M5 6v4"></path><path d="M19 14v4"></path><path d="M10 2v2"></path><path d="M7 8H3"></path><path d="M21 16h-4"></path><path d="M11 3H9"></path></svg></span>.</p>
+</div>
+
+<div class="card" style="background: #F3F0FF; border: 1px solid #DCD3FF; border-radius: 20px; padding: 32px 32px 18px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap">
+<div aria-hidden="true" style="width: 48px; height: 48px; border-radius: 12px; background: #fff; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></div>
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #5B3FD0; background: #fff; border-radius: 999px; padding: 6px 12px">До съёмки</div>
+</div>
+<h3 style="margin: 0; font-size: 26px; font-weight: 800; line-height: 1.2">Откройте онлайн-регистрацию на фотосессию</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3A4066">Создайте фотосессию в кабинете и скопируйте ссылку на регистрацию. Отдайте её администрации - школа разошлёт её в родительские чаты.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3A4066">В мессенджере родитель видит понятное превью и за минуту регистрирует ребёнка. А в день загрузки первым получает SMS со ссылкой на галерею.</p>
+<button type="button" class="more" style="color: #5B3FD0" data-modal="how_reg">Подробнее →</button>
+</div>
+<div style="flex: 0 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div role="img" aria-label="Так ссылка на регистрацию выглядит в родительском чате" style="background: rgba(91,63,208,0.10); border-radius: 16px; padding: 14px">
+<div style="background: #fff; border-radius: 14px 14px 14px 4px; padding: 6px; box-shadow: 0 2px 6px rgba(17,24,67,0.08)">
+<img src="assets/registration-preview.png" alt="" loading="lazy" style="display: block; width: 100%; height: auto; border-radius: 10px">
+<div style="padding: 10px 8px 4px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 14px; font-weight: 800; line-height: 1.35; color: #111843">Фотографии вашего ребёнка из «Детский сад Солнышко»</div>
+<div style="font-size: 13px; line-height: 1.45; color: #4A5072">Зарегистрируйтесь заранее и получите SMS со ссылкой на фотографии вашего ребёнка сразу после их обработки.</div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2px"><span style="font-size: 13px; font-weight: 700; color: #5B3FD0">ваш-домен.lv</span><span style="font-size: 11px; color: #6B7194">10:35</span></div>
+</div>
+</div>
+</div>
+<div style="font-size: 13px; color: #4A5072; text-align: center">Так ссылка выглядит в родительском чате</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1C4A7A; background: #DCEBFB; border-radius: 999px; padding: 6px 12px">Шаг 1</div>
+<div aria-hidden="true" style="width: 48px; height: 48px; border-radius: 12px; background: #ECE8FF; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg></div>
+</div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Фотографируйте всё, что видите</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Портрет, класс, урок, перемена, столовая. Без записей и списков - только подпишите групповое фото класса.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="how_shoot">Подробнее →</button>
+</div>
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1F5E36; background: #DDF1E4; border-radius: 999px; padding: 6px 12px">Шаг 2</div>
+<div aria-hidden="true" style="width: 48px; height: 48px; border-radius: 12px; background: #ECE8FF; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="M17 8l-5-5-5 5"></path><path d="M12 3v12"></path></svg></div>
+</div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Загрузите все фото одной пачкой</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Без сортировки. Система сама соберёт каждому ребёнку его онлайн-фотогалерею.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="how_upload">Подробнее →</button>
+</div>
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #3B2899; background: #E7E1FF; border-radius: 999px; padding: 6px 12px">Шаг 3</div>
+<div aria-hidden="true" style="width: 48px; height: 48px; border-radius: 12px; background: #5B3FD0; display: flex; align-items: center; justify-content: center"><svg class="wave" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"></path><path d="m14 7 3 3"></path><path d="M5 6v4"></path><path d="M19 14v4"></path><path d="M10 2v2"></path><path d="M7 8H3"></path><path d="M21 16h-4"></path><path d="M11 3H9"></path></svg></div>
+</div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Нажмите одну волшебную кнопку</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Родители, которые зарегистрировались онлайн, получают SMS и email со ссылкой на галерею ребёнка. Остальные получат бумажные коды доступа в школе.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="how_send">Подробнее →</button>
+</div>
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #7A3E0C; background: #FFE9D6; border-radius: 999px; padding: 6px 12px">Шаг 4</div>
+<div aria-hidden="true" style="width: 48px; height: 48px; border-radius: 12px; background: #ECE8FF; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg></div>
+</div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Лаборатория делает остальное</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Печать, упаковка по классам и детям, доставка в школу одной партией. Для родителей бесплатно.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="how_lab">Подробнее →</button>
+</div>
+</div>
+<div style="display: flex; gap: 14px; align-items: center; background: #ECE8FF; border-radius: 14px; padding: 18px 22px">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5B3FD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #2B2F55">Родитель видит только своего ребёнка - никаких общих галерей на весь класс.</p>
+</div>
+</section>
+
+<!-- 4. SALES -->
+<section id="sales" style="background: #fff; border-top: 1px solid #E3E5EF; border-bottom: 1px solid #E3E5EF">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 860px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5B3FD0">Продажи</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; font-weight: 800; letter-spacing: -0.02em">Система продаёт, <span class="acc">пока вы снимаете</span> следующую школу.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div class="big" style="flex: 2 1 460px; min-width: 0; background: #111843; color: #fff; border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C9BCFF">История · Польша</div>
+<div style="font-size: clamp(30px, 3.4vw, 46px); line-height: 1.08; font-weight: 800; letter-spacing: -0.02em">Первые заказы - <span class="acc-l">через 10 минут</span></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C3C7E0">За месяц до съёмки Юстина раздала родителям ссылку на регистрацию. После загрузки фото в пятницу вечером нажала «разослать SMS» и сказала нам: «Посмотрим на результаты после выходных...».</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C3C7E0">Первые заказы пришли через десять минут. Через час она позвонила: «Они уже покупают вовсю». Первая тысяча евро - <span style="color: #FFFFFF; font-weight: 700">через пару часов</span>.</p>
+<div style="margin-top: 8px; padding-top: 20px; border-top: 1px solid #2A3370">
+<p style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 20px; line-height: 1.5; color: #E8E4FF">«Сижу вечером на диване, приходит SMS с фотографиями ребёнка - и заказываю, не вставая».</p>
+<p style="margin: 8px 0 0; font-size: 14px; font-weight: 600; color: #A9AED3">Директор школы и мама ученика</p>
+</div>
+<p style="margin: auto 0 0; padding-top: 12px; font-size: 13px; color: #A9AED3">Результаты конкретного фотографа, а не гарантия.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; background: #F7F8FB; border: 1px solid #E3E5EF; border-radius: 20px; padding: 32px 32px 16px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 22px; font-weight: 800">Фото в подарок каждому ребёнку</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Никто в классе не остаётся с пустыми руками. А на карточке - QR-код и пароль к галерее: ещё одно напоминание родителям.</p>
+<div style="border-radius: 10px; overflow: hidden; border: 1px solid #E3E5EF; box-shadow: 0 10px 28px rgba(17,24,67,0.12); margin-top: 6px"><img src="assets/gift-card.jpg" alt="Пример подарочной карточки 15×15 см: слева текст, QR-код, код и пароль к галерее, справа фото ребёнка" loading="lazy" style="display: block; width: 100%; height: auto"></div>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="sales_gift">Подробнее →</button>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="background: #F7F8FB; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">Отчёт по классам и напоминания</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Продажи всех ваших фотосессий и каждого класса - на одном экране. Видите, где заказов мало, - отправляете напоминание в один клик. Оно уйдёт только тем, кто ещё не заказал.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="sales_report">Подробнее →</button>
+</div>
+<div style="background: #F7F8FB; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">Родители заказывают больше</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">В магазин уже встроены проверенные приёмы, которые мягко увеличивают сумму заказа: все фото в подарок от нужной суммы, скидка за количество и готовые наборы. Вам остаётся только включить их.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="sales_check">Подробнее →</button>
+</div>
+<div style="background: #F7F8FB; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">Не только школы и сады</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Утренники с сорока зайчиками и снежинками, детские турниры, сборы - любое массовое событие. Мы сами разложим кадры по детям: родители найдут своего по QR-коду или селфи, а вы продадите намного больше снимков.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="sales_events">Подробнее →</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 5. MONEY + CTA -->
+<section id="start" class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px 72px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 820px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5B3FD0">Цены и старт</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; font-weight: 800; letter-spacing: -0.02em">Первая фотосессия - <span class="acc">без комиссии.</span></h2>
+<p style="margin: 0; font-size: 21px; line-height: 1.6; color: #3A4066"><span style="color: #111843; font-weight: 800">Платите, только когда продали.</span> Худший сценарий - <span class="mark-l">вечер, потраченный на настройку кабинета фотографа</span> в IzziPix.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 40px; font-weight: 800; letter-spacing: -0.02em; color: #5B3FD0">0 €</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">на старте</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Подключение, галереи, загрузка - бесплатно. Нет продаж - нет платежей.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="money_zero">Подробнее →</button>
+</div>
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 40px; font-weight: 800; letter-spacing: -0.02em; color: #5B3FD0">10%</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">только с проданного</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Со второй съёмки. Не с доставки и не с НДС. Плюс комиссия платёжной системы.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="money_fee">Подробнее →</button>
+</div>
+<div style="background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 28px 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 40px; font-weight: 800; letter-spacing: -0.02em; color: #5B3FD0">Вы</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">продавец</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Магазин на вашем домене и от вашего имени. Деньги - сразу на ваш Stripe.</p>
+<button type="button" class="more" style="color: #5B3FD0; margin-top: auto" data-modal="money_seller">Подробнее →</button>
+</div>
+</div>
+<div class="card" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: #fff; border: 1px solid #E3E5EF; border-radius: 16px; padding: 28px 32px 18px">
+<div style="flex: 0 1 auto; font-size: clamp(26px, 3vw, 38px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1">4 школы в год → <span class="acc">15 съёмок</span> за два месяца</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5072">Фотограф из Эстонии пришла в марте. В апреле и мае провела 15 съёмок и наняла двух фотографов.</p>
+<button type="button" class="more" style="color: #5B3FD0" data-modal="story_estonia">Подробнее →</button>
+</div>
+</div>
+</section>
+
+<!-- 6. RESULTS + FINAL CTA -->
+<section id="results" style="background: #fff; border-top: 1px solid #E3E5EF">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px 72px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 860px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5B3FD0">Реальные цифры</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; font-weight: 800; letter-spacing: -0.02em">Один день съёмки. <span class="acc">Вот сколько он приносит.</span></h2>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #3A4066">Три фотосессии, которые уже прошли в IzziPix в странах Балтии. Средняя цена фото - <span style="color: #111843; font-weight: 800">3,50 €</span>. Это не прогноз, а <span class="mark-l">оборот, который фотографы уже получили</span>.</p>
+</div>
+
+<div class="res" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; align-items: stretch">
+<div style="background: #F7F8FB; border: 1px solid #E3E5EF; border-radius: 20px; padding: 32px 28px 24px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1F5E36; background: #DDF1E4; border-radius: 999px; padding: 6px 12px">Детский сад</div>
+<div style="font-size: 15px; font-weight: 700; color: #4A5072">258 детей</div>
+</div>
+<div style="font-size: clamp(44px, 4.6vw, 60px); font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin-top: 18px; color: #111843">5 541 €</div>
+<div style="font-size: 16px; color: #4A5072">оборот одной фотосессии</div>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #E3E5EF; font-size: 16px; line-height: 1.5; color: #2B2F55">≈ <b>21,5 €</b> с каждого ребёнка - больше, чем в обеих школах. Родители малышей наконец видят то, что обычно пропускают: группу, игры, обед, прогулку.</div>
+</div>
+<div style="background: #F7F8FB; border: 1px solid #E3E5EF; border-radius: 20px; padding: 32px 28px 24px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1C4A7A; background: #DCEBFB; border-radius: 999px; padding: 6px 12px">Небольшая школа</div>
+<div style="font-size: 15px; font-weight: 700; color: #4A5072">358 детей</div>
+</div>
+<div style="font-size: clamp(44px, 4.6vw, 60px); font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin-top: 18px; color: #111843">7 508 €</div>
+<div style="font-size: 16px; color: #4A5072">оборот одной фотосессии</div>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #E3E5EF; font-size: 16px; line-height: 1.5; color: #2B2F55">≈ <b>21 €</b> с каждого ученика. Даже небольшая школа - это несколько тысяч евро за одну съёмку.</div>
+</div>
+<div style="background: #5B3FD0; color: #fff; border-radius: 20px; padding: 32px 28px 24px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 24px 60px rgba(91,63,208,0.28)">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #3B2899; background: #fff; border-radius: 999px; padding: 6px 12px">Большая школа</div>
+<div style="font-size: 15px; font-weight: 700; color: #E4DCFF">1 549 детей</div>
+</div>
+<div style="font-size: clamp(44px, 4.6vw, 60px); font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin-top: 18px">24 123 €</div>
+<div style="font-size: 16px; color: #E4DCFF">оборот одной фотосессии</div>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.25); font-size: 16px; line-height: 1.5; color: #F0ECFF">≈ <b style="color: #fff">15,6 €</b> с каждого ученика. Полторы тысячи детей - и ни одного бланка, конверта с наличными или звонка директору.</div>
+</div>
+</div>
+
+<div class="card calc" style="background: #F3F0FF; border: 1px solid #DCD3FF; border-radius: 20px; padding: 32px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-size: 26px; font-weight: 800; line-height: 1.2">А сколько детей в вашей школе?</h3>
+<label for="kids" style="font-size: 16px; color: #3A4066">Детей в школе или саду: <b id="kidsOut" style="color: #111843; font-size: 20px">500</b></label>
+<input id="kids" class="range" type="range" min="50" max="2000" step="10" value="500" aria-describedby="calcNote">
+<p id="calcNote" style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5072">Ориентир по трём фотосессиям выше: 15,6-21,5 € оборота на ребёнка при средней цене фото 3,50 €. Не гарантия - всё зависит от ваших цен, кадров и того, как школа раздаст ссылку на регистрацию.</p>
+</div>
+<div style="flex: 0 1 420px; min-width: 0; background: #fff; border-radius: 16px; padding: 24px 26px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #5B3FD0">Оборот одной фотосессии</div>
+<div id="calcOut" style="white-space: nowrap; font-size: clamp(28px, 3vw, 40px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: #111843">7 800 - 10 750 €</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4A5072">А первая фотосессия - ещё и без комиссии платформы.</div>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between">
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #6B7194; max-width: 760px">Оборот до вычета расходов. Ваша доля зависит от ваших цен и вашей типографии. «≈ € на ребёнка» - оборот, делённый на всех детей учреждения, включая тех, кто ничего не купил.</p>
+<button type="button" class="more" style="color: #5B3FD0" data-modal="results_math">Из чего складывается оборот →</button>
+</div>
+
+<div class="big" style="background: #111843; color: #fff; border-radius: 24px; padding: 64px 48px; display: flex; flex-direction: column; gap: 22px; align-items: flex-start">
+<h2 style="margin: 0; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; font-weight: 800; letter-spacing: -0.02em; max-width: 900px">Пусть в сентябре школа звонит <span class="acc-l">вам первой.</span></h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #C3C7E0; max-width: 680px">Вместе создадим вашу первую фотосессию в кабинете IzziPix: созвон, каталог товаров и первая загрузка фото. Снимаете вы - со всем остальным поможем. И без комиссии платформы.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<a class="btn btn-w" href="#">Провести первую съёмку без комиссии</a>
+<a class="btn btn-o" href="#">Написать нам</a>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="border-top: 1px solid #E3E5EF">
+<div class="foot" style="max-width: 1200px; margin: 0 auto; padding: 28px 32px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: #4A5072">
+<div style="display: flex; align-items: center; gap: 12px"><img src="assets/logo.svg" alt="IzziPix" style="height: 36px; width: auto; display: block"><span>© 2026 IZZIPIX LTD</span></div>
+<div style="display: flex; gap: 20px; flex-wrap: wrap"><a href="#">Условия</a><a href="#">Конфиденциальность</a><a href="#">Для лабораторий</a><a href="#">Амбассадорам</a></div>
+</div>
+</footer>
+
+<div class="mbar">
+<a class="btn btn-p" href="#start">Первая съёмка без комиссии</a>
+</div>
+
+<!-- MODAL -->
+<div class="overlay" id="modal" hidden>
+<div class="mpanel" role="dialog" aria-modal="true" aria-label="Подробнее">
+<div style="display: flex; justify-content: flex-end; margin: -12px -16px 0 0">
+<button type="button" class="x" aria-label="Закрыть" data-close><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111843" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<div class="mp">
+
+<div class="mbody" data-key="pain_forms" hidden>
+<h3>Образцы, бланки и испорченный телефон</h3>
+<p>Сайта и кодов доступа у большинства школьных фотографов нет. Схема одна и та же: напечатать образцы - или индекс-принт - и раздать их через классных руководителей вместе с бланками заказа.</p>
+<p>Дальше бланк идёт к ребёнку, от ребёнка - если повезёт - к родителям, обратно к учителю, от учителя к администрации и только потом к вам. На каждом шаге что-то теряется. Кто-то заболел, и его бланк лежит в тумбочке воспитательницы. Учитель вместо уроков разбирает чужие каракули.</p>
+<p>Каждый потерянный бланк - это непроданный заказ. А каждый перепутанный - звонок родителя директору.</p>
+</div>
+
+<div class="mbody" data-key="pain_cash" hidden>
+<h3>Наличные через учителя</h3>
+<p>Без онлайн-оплаты учитель становится кассиром и инкассатором: принимает деньги, ищет сдачу, носит конверт с собой, потому что в классе его не оставишь.</p>
+<p>Бывает, ребёнок по дороге в школу тратит «деньги на фото» на чипсы и колу. Родитель уверен, что заплатил, - и требует фотографии у классного руководителя.</p>
+<p>Плюс это неучтённый наличный оборот в школе, который не нужен ни администрации, ни вам. В IzziPix родители платят картой онлайн, а деньги сразу приходят на ваш счёт.</p>
+</div>
+
+<div class="mbody" data-key="pain_shots" hidden>
+<h3>Почему все снимают портрет у стенки</h3>
+<p>Самые ценные кадры - живые: урок, перемена, столовая, физкультура, а в саду - как малыш сам ест ложкой. Родителя туда не пустят. Фотографа пустят.</p>
+<p>Но без системы такие кадры не продать: сотни снимков из коридора невозможно разложить по детям и классам. Поэтому фотограф остаётся у фона и снимает конвейером. А портрет у стенки сегодня сделает любая мама на iPhone.</p>
+<p>В IzziPix вы снимаете где угодно и сколько угодно: система сама соберёт кадры каждого ребёнка в его онлайн-фотогалерею.</p>
+</div>
+
+<div class="mbody" data-key="pain_school" hidden>
+<h3>Главное: потерянная школа</h3>
+<p>Без системы продажи растягиваются на недели, а фото приезжают через месяцы. Сняли в ноябре - привезли в феврале, и Рождество прошло без фотографий.</p>
+<p>Каждая путаница - чужое фото в конверте, ребёнок не в том классе, деньги не дошли, заказ потерялся - это родитель, который идёт не к вам, а к директору. Администрация разрешила съёмку, а получила кассу, бланки и разгневанных родителей. Это не их работа, и они этого не любят.</p>
+<p>Тысяча детей и пять процентов проблем - это полсотни звонков, пока вы уже на следующей съёмке. Мы видели офисы фотографов, где стена с сентября по май обклеена стикерами: «потеряли фото», «перепутали класс».</p>
+<p>А в следующем сентябре школа молча зовёт другого фотографа. Вы теряете не одну съёмку - вы теряете школу и её заказы на годы вперёд.</p>
+<p style="background: #ECE8FF; border-radius: 12px; padding: 16px 18px; color: #2B2F55">С IzziPix школа получает фото примерно через две недели, подписанными по классам, без бланков, наличных и звонков. Именно это директор вспомнит, когда будет выбирать фотографа на следующий год.</p>
+</div>
+
+<div class="mbody" data-key="how_shoot" hidden>
+<h3>Снимайте всё, что интересно родителям</h3>
+<p>Вы не привязаны к студии и не ведёте записей. Единственное - подписать, какой класс на групповом фото.</p>
+<p>Можно приехать втроём: один ставит студию, второй снимает групповые, третий тихо заходит на уроки и снимает репортаж - руки вверх, перемена, столовая, физкультура. В саду - как дети приходят с родителями, играют, едят, спят, лепят снеговика на прогулке.</p>
+<p>Иногда родители только из ваших фото узнают, что их ребёнок сам ест ложкой. Такие кадры покупают.</p>
+</div>
+
+<div class="mbody" data-key="how_upload" hidden>
+<h3>Загрузка без сортировки</h3>
+<p>Прогнали через Lightroom или вообще не трогали - загружайте всё вместе. Бывали съёмки на 20 000 файлов. Сидеть у компьютера не нужно.</p>
+<p>Система по каждому групповому фото создаёт класс, каждому ребёнку - его онлайн-фотогалерею, и собирает туда всё: портреты, репортаж, фото с друзьями. Ребёнок, который на одном утреннике был зайцем, а на другом волком, окажется в одной галерее.</p>
+<p>Если что-то легло не туда, в кабинете это легко перенести до рассылки.</p>
+<p>Ретушировать нужно только купленные кадры: кабинет сам соберёт их в папки, каждый кадр - один раз.</p>
+</div>
+
+<div class="mbody" data-key="how_send" hidden>
+<h3>Три канала к каждому родителю</h3>
+<p>До съёмки школа раздаёт родителям ссылку на регистрацию: имя, телефон, email и по желанию селфи ребёнка - с согласием.</p>
+<ul>
+<li>SMS и email зарегистрированным - одной кнопкой, в тот же вечер.</li>
+<li>Бумажные карточки с фото ребёнка, логином, паролем и QR: 8 на листе A4, уже по классам.</li>
+<li>Поздняя регистрация: родитель увидел в классном чате «а мы уже заказали», зарегистрировался после съёмки - и сразу получил доступ.</li>
+</ul>
+<p>Родитель видит только своего ребёнка. Ссылку можно переслать бабушке в другой город - и она тоже закажет.</p>
+</div>
+
+<div class="mbody" data-key="how_lab" hidden>
+<h3>Печать и доставка без вашего участия</h3>
+<p>Вы сами ставите дедлайн бесплатной доставки в школу. После него одной кнопкой отправляете заказы в лабораторию - готовыми файлами для печати, пронумерованными по классу и заказу.</p>
+<p>Лаборатория печатает, пакует и подписывает заказы по классам и детям и привозит в школу одной партией. Для родителей это бесплатно.</p>
+<p>Кто не успел к дедлайну, заказывает ещё полгода - с доставкой в пакомат за счёт родителя.</p>
+<p>Есть своя лаборатория? Можно печатать самому.</p>
+</div>
+
+<div class="mbody" data-key="how_reg" hidden>
+<h3>Онлайн-регистрация: родители готовы ещё до съёмки</h3>
+<p>Регистрация - это ваш прямой канал к телефону каждого родителя. Без неё информация идёт по цепочке через администрацию и учителей. С ней ссылка на галерею приходит родителю в SMS в день загрузки.</p>
+<ul>
+<li>Создайте фотосессию в кабинете и скопируйте ссылку на регистрацию.</li>
+<li>Отправьте её администрации школы или сада - они разошлют её в родительские чаты.</li>
+<li>В мессенджере родитель видит превью: картинку, название школы и короткое описание. Это выглядит официально и вызывает доверие.</li>
+<li>По ссылке открывается регистрация: имя ребёнка, класс или группа, имя родителя. Это занимает минуту.</li>
+</ul>
+<p>Дальше родитель выбирает, как получить доступ. <b>Быстрый:</b> фото лица ребёнка, телефон и e-mail - и ссылка на галерею придёт по SMS сразу после загрузки. <b>Обычный:</b> по бумажной карточке, которую учитель выдаст после съёмки.</p>
+<p>Фото лица нужно только чтобы найти ребёнка на снимках этой фотосессии и удаляется сразу после создания галереи. Родитель даёт на это явное согласие.</p>
+<p>Юстина из Польши открыла регистрацию за месяц до съёмки - и первые заказы пришли через десять минут после рассылки.</p>
+<p><a href="https://fotoangels.lv/-/ru/pre-registration/?eventId=6ac72fee2f51cd121a876f9f" target="_blank" rel="noopener" style="font-weight: 700">Посмотреть пример страницы регистрации →</a></p>
+</div>
+
+<div class="mbody" data-key="sales_justina" hidden>
+<h3>Юстина, Польша: первая тысяча за пару часов</h3>
+<p>За месяц до съёмки Юстина раздала родителям ссылку на регистрацию. После загрузки фото в пятницу вечером нажала «разослать SMS» и сказала: «Посмотрим на результаты после выходных...».</p>
+<p>Первые заказы пришли через десять минут. Через час она позвонила нам: «Они уже покупают вовсю». Первая тысяча евро - через пару часов.</p>
+<p>Директор одной школы рассказывала нам: сижу вечером на диване, приходит SMS с фотографиями ребёнка - и заказываю, не вставая.</p>
+<p style="font-size: 14px; color: #6B7194">Результаты конкретного фотографа, а не гарантия.</p>
+</div>
+
+<div class="mbody" data-key="sales_report" hidden>
+<h3>Отчёт по классам и напоминания</h3>
+<p>Вы видите продажи по каждому классу. В одном классе заказы идут, в другом - ноль: значит, карточки не раздали или класс уехал на экскурсию. Один звонок в школу - и на следующий день в этом классе есть заказы.</p>
+<p>За пару дней до дедлайна - SMS и email тем, кто ещё не заказал или бросил корзину: «бесплатная доставка в школу скоро закрывается». Тех, кто уже купил, не беспокоим.</p>
+</div>
+
+<div class="mbody" data-key="sales_gift" hidden>
+<h3>Фото в подарок каждому ребёнку</h3>
+<p>Тридцать детей в классе. Учитель раздаёт конверты с заказами. Двадцать девять рассматривают себя, а один смотрит на пустую парту.</p>
+<p>Поэтому можно подарить каждому ребёнку карточку 15×15 см: фото 10×15 и поле 5 см с QR-кодом, кодом и паролем к галерее и датой, до которой она открыта. Поле загибается - и фото стоит на столе, как в рамке.</p>
+<div style="border-radius: 12px; overflow: hidden; border: 1px solid #E3E5EF; box-shadow: 0 10px 28px rgba(17,24,67,0.12); margin: 4px 0 8px"><img src="assets/gift-card.jpg" alt="Пример подарочной карточки 15×15 см: слева текст, QR-код, код и пароль к галерее, справа фото ребёнка" loading="lazy" style="display: block; width: 100%; height: auto"></div>
+<p style="font-size: 14px; color: #6B7194">Пример карточки. Пунктир - линия сгиба. Адрес, код, пароль и дата подставляются автоматически для каждого ребёнка.</p>
+<p>Никто не уходит с пустыми руками. А для вас это третье напоминание: по нашим наблюдениям, оно приносит до 10% дополнительных заказов. Себестоимость - центы за штуку.</p>
+</div>
+
+<div class="mbody" data-key="sales_check" hidden>
+<h3>Как родители заказывают больше</h3>
+<p>Цифровой подарок: задайте сумму, например 29 €. Родитель видит в корзине: «Соберите заказ от 29 € - и все фото ребёнка в цифре в подарок».</p>
+<p>Скидки за количество: например, с шестого фото дешевле. Родители, которые брали три фото, добирают до шести.</p>
+<p>Готовые комплекты в один клик и товары, которые открываются уже с фото ребёнка: отпечатки, магниты, кружки, календари, фотокниги.</p>
+</div>
+
+<div class="mbody" data-key="sales_events" hidden>
+<h3>Утренники и детские турниры</h3>
+<p>Утренник: сорок зайцев и снежинок в общей галерее сливаются, и продать их сложно. В IzziPix у каждого ребёнка своя онлайн-фотогалерея - мама видит только своего зайца.</p>
+<p>Турнир, куда съезжается 20-30 команд: один фотограф снимает матчи, второй ставит тематическую студию. Рядом плакат с QR-кодом - на регистрацию или вход по селфи. Родитель прикладывает селфи ребёнка и видит его и в студии, и во всех матчах.</p>
+<p>Самая сильная аудитория - дети 4-12 лет: родители там настоящие фанаты.</p>
+</div>
+
+<div class="mbody" data-key="money_zero" hidden>
+<h3>0 € до первой продажи</h3>
+<p>Подключение, галереи, загрузка фото - бесплатно. Нет подписки и месячного минимума. Загрузили и передумали продавать - не платите ничего.</p>
+<p>Первая фотосессия - без комиссии платформы. Ваши расходы - только комиссия платёжной системы и производство того, что родители реально купили, в партнёрской лаборатории.</p>
+<p>Для старта нужен бизнес-статус (хотя бы ИП) и аккаунт Stripe - это около 20 минут. Первую загрузку делаем вместе.</p>
+</div>
+
+<div class="mbody" data-key="money_fee" hidden>
+<h3>10% - только с проданного</h3>
+<p>Со второй фотосессии платформа берёт 10% с проданных товаров. Не с доставки. Если вы плательщик НДС - с суммы без НДС: брать комиссию с вашего налога было бы нечестно.</p>
+<p>Отдельно - комиссия платёжной системы: у <button type="button" class="inl" data-modal="stripe">Stripe</button> для обычных европейских карт 1,5% + 0,25 € с платежа.</p>
+<p>Печать, упаковку и доставку в школу вы оплачиваете лаборатории по её ценам.</p>
+</div>
+
+<div class="mbody" data-key="money_seller" hidden>
+<h3>Продавец - вы</h3>
+<p>Магазин работает на вашем домене (или поддомене IzziPix), с вашим логотипом, ценами и реквизитами. Разные каталоги - для сада, школы, утренника или турнира.</p>
+<p>Родители платят картой, деньги сразу поступают на ваш <button type="button" class="inl" data-modal="stripe">Stripe</button> (в Польше - Przelewy24). Никто не держит их до конца сезона.</p>
+<p>Один наш фотограф загрузил съёмку, разослал карточки и забыл. Через месяц написал: «Ничего не происходит». Деньги лежали на его счёте почти месяц, а школа получила фото три недели назад.</p>
+</div>
+
+<div class="mbody" data-key="story_estonia" hidden>
+<h3>Эстония: из фотографа - в студию за три месяца</h3>
+<p>Фотограф из Эстонии успевала четыре школы в год: после каждой - три месяца беготни с бланками, заказами и деньгами.</p>
+<p>В марте она пришла в IzziPix. В апреле и мае провела 15 съёмок, а в конце мая наняла двух фотографов. После съёмки ей больше не нужно ничего делать - кроме как ехать на следующую.</p>
+</div>
+
+<div class="mbody" data-key="results_math" hidden>
+<h3>Из чего складывается оборот</h3>
+<p>Оборот - это всё, что родители заплатили в вашем магазине за одну фотосессию, за любые товары из вашего каталога. Средняя цена фото в этих трёх фотосессиях - 3,50 €. Цены ставите вы сами.</p>
+<p>Из оборота вычитаются:</p>
+<ul>
+<li><b>Производство в лаборатории</b> - печать, упаковка и доставка в школу, по ценам вашей лаборатории. Цифровые фото печатать не нужно.</li>
+<li><b>Комиссия платёжной системы</b> - у <button type="button" class="inl" data-modal="stripe">Stripe</button> для обычных европейских карт 1,5% + 0,25 € с платежа.</li>
+<li><b>Комиссия IzziPix</b> - на первой фотосессии 0. Со второй - 10% с проданных товаров, без доставки и без НДС.</li>
+</ul>
+<p>Всё остальное - ваше. И приходит на ваш счёт сразу, а не в конверте к концу сезона.</p>
+<p style="font-size: 14px; color: #6B7194">«≈ € на ребёнка» мы посчитали сами: оборот, делённый на число детей в учреждении. Это три конкретные фотосессии, а не гарантия результата.</p>
+</div>
+
+<div class="mbody" data-key="stripe" hidden>
+<h3>Что такое Stripe</h3>
+<p>Stripe - одна из крупнейших в мире платёжных систем для интернет-магазинов. Именно через него родители платят за фото в вашем магазине: банковской картой, Apple Pay или Google Pay.</p>
+<ul>
+<li><b>Аккаунт оформляется на вас.</b> Это ваш собственный счёт в Stripe, не счёт IzziPix. Деньги родителей попадают туда сразу после оплаты, никто не держит их до конца сезона.</li>
+<li><b>Вывод на ваш банк.</b> Stripe переводит деньги на ваш банковский счёт автоматически по расписанию или по вашему запросу.</li>
+<li><b>Комиссия Stripe.</b> Для обычных европейских карт - 1,5% + 0,25 € с платежа. Без абонентской платы. IzziPix на этом не зарабатывает.</li>
+<li><b>Как подключить.</b> Нужен бизнес-статус - хотя бы ИП. Заявка на аккаунт занимает около 20 минут, при подключении мы поможем.</li>
+</ul>
+<p>В Польше вместо Stripe можно использовать Przelewy24 - условия похожие.</p>
+<p><a href="https://stripe.com" target="_blank" rel="noopener" style="font-weight: 700">Официальный сайт Stripe →</a> · <a href="https://stripe.com/pricing" target="_blank" rel="noopener" style="font-weight: 700">Тарифы →</a></p>
+</div>
+
+</div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; padding-top: 18px; border-top: 1px solid #EEF0F6">
+<a class="btn btn-p" href="#start" data-close>Провести первую съёмку без комиссии</a>
+</div>
+</div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
